@@ -9,13 +9,15 @@
 </div>
 
 <style>
+
 	:global(body) {
 		margin: 0;
 		padding: 0;
+		font-size: 2vmin;
 	}
 	#everything {
-		height: 50vh;
-		width: 50vh;
+		height: 100vmin;
+		width: 100vmin;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -24,6 +26,7 @@
 	}
 	header {
 		width: 100%;
+		height: 22vmin;
 		background: #01a3d4;
 
 	}
@@ -34,12 +37,12 @@
         color: white;
     }
 	#guys {
-		height: 50%;
-		width: 50%;
+		height: 61vmin;
+		width: 64vmin;
 		background: lightgrey;
-		border: red 10px solid;
+		border: red 0.9rem solid;
 		border-radius: 7%;
-        margin-left: 10%;
+        margin-left: 5%;
 	}
     #white {
         height: 100vh;
