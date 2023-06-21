@@ -3,6 +3,12 @@
 		<header>
             <div id="logo">
                 <div id="block"/>
+                <div id="right-outside"/>
+                <div id="left-outside"/>
+                <div id="top-bar"/>
+                <div id="bottom-bar"/>
+                <p id="blink">blink</p>
+                <p id="numbers">-182-</p>
             </div>
             <div id="text">
                 <h1>all the small things</h1>
@@ -19,6 +25,14 @@
         font-family: "Univers 85 Extra Black Oblique";
         src: url(/univers-85-extra-black-oblique.otf);
     }
+    @font-face {
+        font-family: "Folio Condensed Bold";
+        src: url(/Equal-Sans-Demo.ttf.woff);
+    }
+    @font-face {
+        font-family: "Helvetica Neue 85";
+        src: url(/helvetica-neue-lt-std-83-heavy-extended-oblique.otf);
+    }
     :global(html) {
         font-size: 2vmin;
     }
@@ -32,7 +46,7 @@
     #logo {
         height: 100%;
         width: 43%;
-        background: red;
+        background: #01a3d4;
         display: block;
     }
     #block {
@@ -45,9 +59,79 @@
         top: 6vmin;
 
         border-right: #fff 0rem solid;
-        border-top-right-radius: 40%;
-        border-bottom-right-radius: 40%;
+        border-top-right-radius: 50vmin;
+        border-bottom-right-radius: 50vmin;
 
+    }
+    #right-outside {
+        height: 15vmin;
+        width: 20.5vmin;
+        
+        position: absolute;
+        margin-left: 19.5vmin;
+        margin-top: -7.7vmin;
+
+        border: #fff 0.5rem solid;
+        border-radius: 50vmin;
+
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: none;
+    }
+    #left-outside {
+        height: 11.8vmin;
+        width: 16.3vmin;
+        
+        position: absolute;
+        margin-left: 3vmin;
+        margin-top: -6.2vmin;
+
+        border: #fff 0.5rem solid;
+        border-radius: 50vmin;
+
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+    }
+    #top-bar {
+        position: absolute;
+        background: white;
+        height: 1.8vmin;
+        width: 0.5rem;
+
+        margin-left: 19.5vmin;
+        margin-top: -7vmin;
+
+
+    }
+    #bottom-bar {
+        position: absolute;
+        background: white;
+        height: 1.8vmin;
+        width: 0.5rem;
+
+        margin-left: 19.5vmin;
+        margin-top: 6.6vmin;
+    }
+    #blink {
+        position: absolute;
+        font-family: "Helvetica Neue 85";
+        font-size: 5.3vmin;
+        font-weight: 500;
+        color: #fff;
+        margin-left: 6.5vmin;
+        margin-top: -2.8vmin;
+    }
+    #numbers {
+        position: absolute;
+        font-family: "Folio Condensed Bold";
+        font-weight: bold;
+        font-size: 11vmin;
+        letter-spacing: 0vmin;
+        color: red;
+        margin-left: 23vmin;
+        margin-top: -5vmin;
+        z-index: 1;
     }
 
     /* this is actually the cd cover */
